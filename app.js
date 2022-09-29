@@ -12,10 +12,12 @@ const displayScreenArray = [];
 
 const number_0 = document.querySelector("#number-0");
 
-console.log(number_0);
+// console.log(number_0);
 
 const addNumberFunction = (event) => {
-  alert("button 0 has been pressed");
+  // alert("button 0 has been pressed");
+  displayScreenArray.push(Number(number_0.textContent));
+  console.log(displayScreenArray);
 };
 
 number_0.addEventListener("click", addNumberFunction);
