@@ -14,6 +14,8 @@ const screen = document.querySelector(".show_screen");
 const number_0 = document.querySelector("#number-0");
 const number_1 = document.querySelector("#number-1");
 
+let numberSelected;
+
 // console.log(number_0);
 
 const addNumberFunction = (event) => {
@@ -30,6 +32,8 @@ const addNumberFunction = (event) => {
 const updateScreen = () => {
   screen.innerText = displayScreenArray;
 };
+
+
 
 number_0.addEventListener("click", addNumberFunction);
 number_1.addEventListener("click", addNumberFunction);
