@@ -9,6 +9,9 @@
 // button should also push operators? how to seperate the operator and number in an array?
 const displayScreenTotal = document.querySelector(".show_screen");
 
+// let buttonDelete = document.getElementsByClassName("main__deleteButon");
+let buttonDelete = document.getElementById("del");
+
 let displayScreenArray = [];
 
 let tempVal;
@@ -68,8 +71,8 @@ const operationRefresher = (test) => {
 
       console.log("this is the calculate function " + displayScreenArray[1]);
       const opp = displayScreenArray[1];
-      const num1 = displayScreenArray[0];
-      const num2 = displayScreenArray[2];
+      let num1 = displayScreenArray[0];
+      let num2 = displayScreenArray[2];
       console.log("this is num 1 " + num1);
       console.log("this is num 2 " + num2);
 
@@ -134,6 +137,18 @@ for (let i = 0; i < operatorBtn.length; i++) {
   console.log("op button");
   operatorBtn[i].addEventListener("click", operationRefresher, false);
 }
+buttonDelete.onclick = () => {
+  console.log("del button has been clicked");
+  let lengthOfDisplayScreenVal = displayScreenVal.length;
+  console.log("length of screen val is " + lengthOfDisplayScreenVal);
+  displayScreenVal = displayScreenVal.slice(0, lengthOfDisplayScreenVal - 1);
+  if (displayScreenVal === "") {
+    displayScreenVal = "0";
+  }
+
+  displayScreenTotal.innerText = displayScreenVal;
+};
+
 /*
 
 
