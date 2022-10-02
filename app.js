@@ -11,6 +11,7 @@ const displayScreenTotal = document.querySelector(".show_screen");
 
 // let buttonDelete = document.getElementsByClassName("main__deleteButon");
 let buttonDelete = document.getElementById("del");
+let buttonDecimalPoint = document.getElementById("decimalPoint");
 
 let displayScreenArray = [];
 
@@ -137,6 +138,12 @@ for (let i = 0; i < operatorBtn.length; i++) {
   console.log("op button");
   operatorBtn[i].addEventListener("click", operationRefresher, false);
 }
+
+buttonDecimalPoint.onclick = () => {
+  if (displayScreenVal.includes(".") == false) displayScreenVal += ".";
+  displayScreenTotal.innerText = displayScreenVal;
+};
+
 buttonDelete.onclick = () => {
   console.log("del button has been clicked");
   let lengthOfDisplayScreenVal = displayScreenVal.length;
