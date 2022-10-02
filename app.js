@@ -7,7 +7,7 @@
 //display needs to update in real time depending on the button pressed.
 
 // button should also push operators? how to seperate the operator and number in an array?
-const result = document.querySelector(".show_screen");
+const displayScreenTotal = document.querySelector(".show_screen");
 
 const displayScreenArray = [];
 
@@ -15,12 +15,13 @@ let tempVal;
 let displayScreenVal = "0";
 // let BtnNumber = document.querySelector(".main__btnNumber");
 let BtnNumber = document.getElementsByClassName("main__btnNumber");
+let operatorBtn = document.getElementsByClassName("main__operatorBtn");
 
 // const test = () => {
 //   console.log("button has been clicked");
 // };
 
-let updateScreen = (test) => {
+let screenUpdater = (test) => {
   console.log("This is current number button clicked " + test.target.innerText);
   let numberPressed = test.target.innerText;
 
@@ -29,14 +30,39 @@ let updateScreen = (test) => {
     displayScreenVal = "";
   } else {
     displayScreenVal += numberPressed;
-    result.innerText = displayScreenVal;
+    displayScreenTotal.innerText = displayScreenVal;
     // console.log("This is the current screen value" + displayScreenVal);
   }
 };
 
 for (let i = 0; i < BtnNumber.length; i++) {
   console.log("test");
-  BtnNumber[i].addEventListener("click", updateScreen, false);
+  BtnNumber[i].addEventListener("click", screenUpdater, false);
+}
+
+let performOperation = (clickObj) => {
+  let operator = clickObj.target.innerText;
+  console.log(operator);
+
+  switch (operator) {
+    case "+":
+      tempVal = displayScreenVal;
+      displayScreenVal = "0";
+      displayScreenTotal.innerText = displayScreenVal;
+      displayScreenArray.push(tempVal);
+      console.log("pending val is " + tempVal);
+      displayScreenArray.push("+");
+      console.log("plus button has been clicked " + displayScreenArray);
+
+    default:
+      console.log("default case has been reached");
+      break;
+  }
+};
+
+for (let i = 0; i < operatorBtn.length; i++) {
+  console.log("op button");
+  operatorBtn[i].addEventListener("click", performOperation, false);
 }
 /*
 
@@ -63,10 +89,10 @@ for (let i = 0; i < BtnNumber.length; i++) {
 //   console.log(displayScreenArray);
 //   screen.innerText = displayScreenArray;
 
-//   updateScreen();
+//   screenUpdater();
 // };
 
-// const updateScreen = () => {
+// const screenUpdater = () => {
 //   screen.innerText = displayScreenArray;
 // };
 
@@ -75,6 +101,6 @@ for (let i = 0; i < BtnNumber.length; i++) {
 
 // screen.textContent = "test change screen";
 
-// screen.addEventListener("change", updateScreen);
+// screen.addEventListener("change", screenUpdater);
 
 // console.log(screen.innerText);
