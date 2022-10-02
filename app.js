@@ -46,10 +46,17 @@ const operationRefresher = (test) => {
 
   switch (opp) {
     case "+":
-      operatorAdd();
+      // operatorAdd();
+      opperatorSign("+");
       break;
     case "-":
-      operatorMinus();
+      opperatorSign("-");
+      break;
+    case "/":
+      opperatorSign("/");
+      break;
+    case "*":
+      opperatorSign("*");
       break;
 
     default:
@@ -58,23 +65,13 @@ const operationRefresher = (test) => {
   }
 };
 
-const operatorAdd = () => {
+const opperatorSign = (oppSign) => {
   tempVal = displayScreenVal;
   displayScreenVal = "0";
   displayScreenTotal.innerText = displayScreenVal;
   displayScreenArray.push(tempVal);
   console.log("pending val is " + tempVal);
-  displayScreenArray.push("+");
-  console.log("plus button has been clicked " + displayScreenArray);
-};
-
-const operatorMinus = () => {
-  tempVal = displayScreenVal;
-  displayScreenVal = "0";
-  displayScreenTotal.innerText = displayScreenVal;
-  displayScreenArray.push(tempVal);
-  console.log("pending val is " + tempVal);
-  displayScreenArray.push("-");
+  displayScreenArray.push(oppSign);
   console.log("plus button has been clicked " + displayScreenArray);
 };
 
