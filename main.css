@@ -1,6 +1,7 @@
 * {
   margin: 0px;
   padding: 0px;
+  background-color: #ece6e6;
 }
 
 body {
@@ -45,6 +46,14 @@ body .main__calculatorContainer .main__btnConatiner .btnConatiner__firstRow {
 }
 body .main__calculatorContainer .main__btnConatiner .btnConatiner__firstRow button {
   width: 33%;
+  background-color: #e6babe;
+  text-decoration: none;
+  border-radius: 8px;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+body .main__calculatorContainer .main__btnConatiner .btnConatiner__firstRow button:hover {
+  opacity: 1;
 }
 body .main__calculatorContainer .main__btnConatiner .btnConatiner__secondRow {
   height: 17%;
@@ -85,4 +94,37 @@ body .main__calculatorContainer .main__btnConatiner .btnConatiner__fifthRow {
 }
 body .main__calculatorContainer .main__btnConatiner .btnConatiner__fifthRow button {
   width: 33%;
+}
+
+@media only screen and (min-width: 1024px) {
+  body main .main__calculatorContainer {
+    height: 80vh;
+    width: 50vh;
+    font-size: 2rem;
+  }
+  body main .main__calculatorContainer .main__displayNumbers {
+    text-align: end;
+  }
+  body main .main__calculatorContainer .main__btnConatiner {
+    border: 2px solid yellowgreen;
+    height: 65%;
+  }
+  body main .main__calculatorContainer .main__btnConatiner button {
+    font-size: 2rem;
+  }
+  body main .main__calculatorContainer .main__btnConatiner .btnConatiner__firstRow {
+    height: 20%;
+  }
+  body main .main__calculatorContainer .main__btnConatiner .btnConatiner__secondRow {
+    height: 20%;
+  }
+  body main .main__calculatorContainer .main__btnConatiner .btnConatiner__thirdRow {
+    height: 20%;
+  }
+  body main .main__calculatorContainer .main__btnConatiner .btnConatiner__fourthRow {
+    height: 20%;
+  }
+  body main .main__calculatorContainer .main__btnConatiner .btnConatiner__fifthRow {
+    height: 20%;
+  }
 }/*# sourceMappingURL=main.css.map */

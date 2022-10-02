@@ -1,7 +1,10 @@
 * {
   margin: 0px;
   padding: 0px;
+  background-color: #ece6e6;
 }
+
+$button-color: #e6babe;
 
 body {
   display: flex;
@@ -34,6 +37,7 @@ body {
     .main__btnConatiner {
       border: 2px solid yellowgreen;
       height: 65%;
+
       .btnConatiner__firstRow {
         height: 17%;
         display: flex;
@@ -42,6 +46,14 @@ body {
         border: 2px solid purple;
         button {
           width: 33%;
+          background-color: $button-color;
+          text-decoration: none;
+          border-radius: 8px;
+          opacity: 0.6;
+          transition: 0.3s;
+        }
+        button:hover {
+          opacity: 1;
         }
       }
       .btnConatiner__secondRow {
@@ -82,6 +94,45 @@ body {
         border: 2px solid purple;
         button {
           width: 33%;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  body {
+    main {
+      .main__calculatorContainer {
+        height: 80vh;
+        width: 50vh;
+        font-size: 2rem;
+        .main__displayNumbers {
+          text-align: end;
+        }
+        .main__btnConatiner {
+          border: 2px solid yellowgreen;
+          height: 65%;
+
+          button {
+            font-size: 2rem;
+          }
+
+          .btnConatiner__firstRow {
+            height: 20%;
+          }
+          .btnConatiner__secondRow {
+            height: 20%;
+          }
+          .btnConatiner__thirdRow {
+            height: 20%;
+          }
+          .btnConatiner__fourthRow {
+            height: 20%;
+          }
+          .btnConatiner__fifthRow {
+            height: 20%;
+          }
         }
       }
     }
