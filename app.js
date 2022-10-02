@@ -40,19 +40,17 @@ for (let i = 0; i < BtnNumber.length; i++) {
   BtnNumber[i].addEventListener("click", screenUpdater, false);
 }
 
-let performOperation = (clickObj) => {
-  let operator = clickObj.target.innerText;
-  console.log(operator);
+const operationRefresher = (test) => {
+  let opp = test.target.innerText;
+  console.log(opp);
 
-  switch (operator) {
+  switch (opp) {
     case "+":
-      tempVal = displayScreenVal;
-      displayScreenVal = "0";
-      displayScreenTotal.innerText = displayScreenVal;
-      displayScreenArray.push(tempVal);
-      console.log("pending val is " + tempVal);
-      displayScreenArray.push("+");
-      console.log("plus button has been clicked " + displayScreenArray);
+      operatorAdd();
+      break;
+    case "-":
+      operatorMinus();
+      break;
 
     default:
       console.log("default case has been reached");
@@ -60,9 +58,29 @@ let performOperation = (clickObj) => {
   }
 };
 
+const operatorAdd = () => {
+  tempVal = displayScreenVal;
+  displayScreenVal = "0";
+  displayScreenTotal.innerText = displayScreenVal;
+  displayScreenArray.push(tempVal);
+  console.log("pending val is " + tempVal);
+  displayScreenArray.push("+");
+  console.log("plus button has been clicked " + displayScreenArray);
+};
+
+const operatorMinus = () => {
+  tempVal = displayScreenVal;
+  displayScreenVal = "0";
+  displayScreenTotal.innerText = displayScreenVal;
+  displayScreenArray.push(tempVal);
+  console.log("pending val is " + tempVal);
+  displayScreenArray.push("-");
+  console.log("plus button has been clicked " + displayScreenArray);
+};
+
 for (let i = 0; i < operatorBtn.length; i++) {
   console.log("op button");
-  operatorBtn[i].addEventListener("click", performOperation, false);
+  operatorBtn[i].addEventListener("click", operationRefresher, false);
 }
 /*
 
