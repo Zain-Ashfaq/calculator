@@ -9,7 +9,7 @@
 // button should also push operators? how to seperate the operator and number in an array?
 const displayScreenTotal = document.querySelector(".show_screen");
 
-const displayScreenArray = [];
+let displayScreenArray = [];
 
 let tempVal;
 let displayScreenVal = "0";
@@ -58,12 +58,36 @@ const operationRefresher = (test) => {
     case "*":
       opperatorSign("*");
       break;
+    case "=":
+      // calculate();
+      console.log("this is the calculate function " + displayScreenArray[1]);
+      const opp = displayScreenArray[1];
+      const num1 = displayScreenArray[0];
+      const num2 = displayScreenArray[2];
+      console.log("this is num 1 " + num1);
+      console.log("this is num 2 " + num2);
+
+      temp = Number(num1) + Number(num2);
+
+      displayScreenTotal.innerText = temp;
 
     default:
       console.log("default case has been reached");
       break;
   }
 };
+
+// const calculate = () => {
+//   console.log("this is the calculate function " + displayScreenArray[0]);
+//   const opp = displayScreenArray[1];
+//   const num1 = displayScreenArray[0];
+//   const num2 = displayScreenArray[2];
+
+//   if (opp == "+") {
+//     temp = num1 + num2;
+//     displayScreenArray.push(temp);
+//   }
+// };
 
 const opperatorSign = (oppSign) => {
   tempVal = displayScreenVal;
