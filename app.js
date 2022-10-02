@@ -7,13 +7,13 @@
 //display needs to update in real time depending on the button pressed.
 
 // button should also push operators? how to seperate the operator and number in an array?
-const displayScreenTotal = document.querySelector(".show_screen");
+const displayScreenTotal = document.querySelector("#main__showScreen");
 
 // let buttonDelete = document.getElementsByClassName("main__deleteButon");
 const buttonDelete = document.getElementById("del");
 const buttonDecimalPoint = document.getElementById("decimalPoint");
 
-const shadow = document.getElementById("displayResShadow");
+const shadow = document.getElementById("main__displayResShadow");
 const buttonClearAll = document.getElementById("clear");
 
 let displayScreenArray = [];
@@ -188,7 +188,7 @@ buttonClearAll.onclick = () => {
 
 */
 
-// const screen = document.querySelector(".show_screen");
+// const screen = document.querySelector("#main__showScreen");
 
 // const number_0 = document.querySelector("#number-0");
 // const number_1 = document.querySelector("#number-1");

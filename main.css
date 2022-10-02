@@ -1,0 +1,88 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  width: 100vw;
+  border: 2px solid red;
+}
+body .main__header {
+  display: flex;
+  justify-content: center;
+  color: green;
+  border: 2px solid purple;
+  height: 20%;
+}
+body .main__calculatorContainer {
+  border: 2px solid green;
+  border-radius: 10px;
+  height: 40vh;
+  width: 80vw;
+}
+body .main__calculatorContainer .main__displayNumbers {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 0px;
+  margin-bottom: 10px;
+  border: 2px solid blue;
+  height: 5%;
+}
+body .main__calculatorContainer .main__btnConatiner {
+  border: 2px solid yellowgreen;
+  height: 65%;
+}
+body .main__calculatorContainer .main__btnConatiner .btnConatiner__firstRow {
+  height: 17%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 2px solid purple;
+}
+body .main__calculatorContainer .main__btnConatiner .btnConatiner__firstRow button {
+  width: 33%;
+}
+body .main__calculatorContainer .main__btnConatiner .btnConatiner__secondRow {
+  height: 17%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 2px solid purple;
+}
+body .main__calculatorContainer .main__btnConatiner .btnConatiner__secondRow button {
+  width: 25%;
+}
+body .main__calculatorContainer .main__btnConatiner .btnConatiner__thirdRow {
+  height: 17%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 2px solid purple;
+}
+body .main__calculatorContainer .main__btnConatiner .btnConatiner__thirdRow button {
+  width: 25%;
+}
+body .main__calculatorContainer .main__btnConatiner .btnConatiner__fourthRow {
+  height: 17%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 2px solid purple;
+}
+body .main__calculatorContainer .main__btnConatiner .btnConatiner__fourthRow button {
+  width: 25%;
+}
+body .main__calculatorContainer .main__btnConatiner .btnConatiner__fifthRow {
+  height: 17%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 2px solid purple;
+}
+body .main__calculatorContainer .main__btnConatiner .btnConatiner__fifthRow button {
+  width: 33%;
+}/*# sourceMappingURL=main.css.map */

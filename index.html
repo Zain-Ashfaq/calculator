@@ -5,35 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator</title>
+    <link rel="stylesheet" href="./main.css" />
   </head>
   <body>
     <main>
-      <h1>Calculator</h1>
-      <span class="result" id="displayResShadow">shadow screen</span>
-      <span class="show_screen">Display screen</span>
-      <div>
-        <button class="main__btnNumber" id="number-0">0</button>
-        <button class="main__btnNumber" id="number-1">1</button>
-        <button class="main__btnNumber">2</button>
-        <button class="main__btnNumber">3</button>
-        <button class="main__btnNumber">4</button>
-        <button class="main__btnNumber">5</button>
-        <button class="main__btnNumber">6</button>
-        <button class="main__btnNumber">7</button>
-        <button class="main__btnNumber">8</button>
-        <button class="main__btnNumber">9</button>
-      </div>
-      <div>
-        <button class="main__operatorBtn">+</button>
-        <button class="main__operatorBtn">-</button>
-        <button class="main__operatorBtn">/</button>
-        <button class="main__operatorBtn">*</button>
-        <button class="main__operatorBtn">=</button>
+      <header class="main__header">
+        <h1>Calculator</h1>
+      </header>
+      <div class="main__calculatorContainer">
+        <span class="main__displayNumbers" id="main__displayResShadow"
+          >shadow screen</span
+        >
+        <span class="main__displayNumbers" id="main__showScreen"
+          >Display screen</span
+        >
+        <div class="main__btnConatiner">
+          <div class="btnConatiner__firstRow">
+            <button id="clear">C</button>
+            <button class="main__deleteButon" id="del">Del</button>
+            <button class="main__operatorBtn">+</button>
+          </div>
+          <div class="btnConatiner__secondRow">
+            <button class="main__btnNumber">1</button>
+            <button class="main__btnNumber">2</button>
+            <button class="main__btnNumber">3</button>
+            <button class="main__operatorBtn">-</button>
+          </div>
+          <div class="btnConatiner__thirdRow">
+            <button class="main__btnNumber">4</button>
+            <button class="main__btnNumber">5</button>
+            <button class="main__btnNumber">6</button>
+            <button class="main__operatorBtn">*</button>
+          </div>
+          <div class="btnConatiner__fourthRow">
+            <button class="main__btnNumber">7</button>
+            <button class="main__btnNumber">8</button>
+            <button class="main__btnNumber">9</button>
 
-        <button id="decimalPoint">.</button>
-
-        <button class="main__deleteButon" id="del">Del</button>
-        <button id="clear">C</button>
+            <button class="main__operatorBtn">/</button>
+          </div>
+          <div class="btnConatiner__fifthRow">
+            <button class="main__btnNumber">0</button>
+            <button id="decimalPoint">.</button>
+            <button class="main__operatorBtn">=</button>
+          </div>
+        </div>
       </div>
     </main>
     <!-- external script -->
