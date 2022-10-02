@@ -10,20 +10,26 @@
 const displayScreenTotal = document.querySelector(".show_screen");
 
 // let buttonDelete = document.getElementsByClassName("main__deleteButon");
-let buttonDelete = document.getElementById("del");
-let buttonDecimalPoint = document.getElementById("decimalPoint");
+const buttonDelete = document.getElementById("del");
+const buttonDecimalPoint = document.getElementById("decimalPoint");
+
+const shadow = document.getElementById("displayResShadow");
 
 let displayScreenArray = [];
 
 let tempVal;
 let displayScreenVal = "0";
 // let BtnNumber = document.querySelector(".main__btnNumber");
-let BtnNumber = document.getElementsByClassName("main__btnNumber");
-let operatorBtn = document.getElementsByClassName("main__operatorBtn");
+const BtnNumber = document.getElementsByClassName("main__btnNumber");
+const operatorBtn = document.getElementsByClassName("main__operatorBtn");
 
 // const test = () => {
 //   console.log("button has been clicked");
 // };
+
+const shadowRefresher = () => {
+  shadow.innerText = displayScreenArray;
+};
 
 let screenUpdater = (test) => {
   console.log("This is current number button clicked " + test.target.innerText);
@@ -55,6 +61,7 @@ const operationRefresher = (test) => {
     case "+":
       // operatorAdd();
       opperatorSign("+");
+
       break;
     case "-":
       opperatorSign("-");
@@ -69,6 +76,7 @@ const operationRefresher = (test) => {
       // calculate();
 
       zain();
+      shadowRefresher();
 
       console.log("this is the calculate function " + displayScreenArray[1]);
       const opp = displayScreenArray[1];
@@ -132,6 +140,7 @@ const opperatorSign = (oppSign) => {
   console.log("pending val is " + tempVal);
   displayScreenArray.push(oppSign);
   console.log("plus button has been clicked " + displayScreenArray);
+  shadowRefresher();
 };
 
 for (let i = 0; i < operatorBtn.length; i++) {
