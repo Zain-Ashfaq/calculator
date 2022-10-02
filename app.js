@@ -28,11 +28,10 @@ let screenUpdater = (test) => {
   if (displayScreenVal === "0") {
     // console.log("checks if first number is 0. If so no 0 values will be shown");
     displayScreenVal = "";
-  } else {
-    displayScreenVal += numberPressed;
-    displayScreenTotal.innerText = displayScreenVal;
-    // console.log("This is the current screen value" + displayScreenVal);
   }
+  displayScreenVal += numberPressed;
+  displayScreenTotal.innerText = displayScreenVal;
+  // console.log("This is the current screen value" + displayScreenVal);
 };
 
 for (let i = 0; i < BtnNumber.length; i++) {
@@ -45,6 +44,10 @@ const operationRefresher = (test) => {
   console.log(opp);
 
   switch (opp) {
+    // case "Updater":
+    //   // zain();
+
+    //   break;
     case "+":
       // operatorAdd();
       opperatorSign("+");
@@ -60,6 +63,9 @@ const operationRefresher = (test) => {
       break;
     case "=":
       // calculate();
+
+      zain();
+
       console.log("this is the calculate function " + displayScreenArray[1]);
       const opp = displayScreenArray[1];
       const num1 = displayScreenArray[0];
@@ -67,9 +73,26 @@ const operationRefresher = (test) => {
       console.log("this is num 1 " + num1);
       console.log("this is num 2 " + num2);
 
-      temp = Number(num1) + Number(num2);
+      if (opp == "+") {
+        temp = Number(num1) + Number(num2);
 
-      displayScreenTotal.innerText = temp;
+        displayScreenTotal.innerText = temp;
+      }
+      if (opp == "-") {
+        temp = Number(num1) - Number(num2);
+
+        displayScreenTotal.innerText = temp;
+      }
+      if (opp == "/") {
+        temp = Number(num1) / Number(num2);
+
+        displayScreenTotal.innerText = temp;
+      }
+      if (opp == "*") {
+        temp = Number(num1) * Number(num2);
+
+        displayScreenTotal.innerText = temp;
+      }
 
     default:
       console.log("default case has been reached");
@@ -88,6 +111,14 @@ const operationRefresher = (test) => {
 //     displayScreenArray.push(temp);
 //   }
 // };
+
+const zain = () => {
+  console.log("updater has been pressed");
+  tempVal = displayScreenVal;
+  displayScreenVal = "0";
+  displayScreenTotal.innerText = displayScreenVal;
+  displayScreenArray.push(tempVal);
+};
 
 const opperatorSign = (oppSign) => {
   tempVal = displayScreenVal;
