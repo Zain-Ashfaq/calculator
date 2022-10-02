@@ -14,8 +14,11 @@ const buttonDelete = document.getElementById("del");
 const buttonDecimalPoint = document.getElementById("decimalPoint");
 
 const shadow = document.getElementById("displayResShadow");
+const buttonClearAll = document.getElementById("clear");
 
 let displayScreenArray = [];
+let num1;
+let num2;
 
 let tempVal;
 let displayScreenVal = "0";
@@ -28,10 +31,11 @@ const operatorBtn = document.getElementsByClassName("main__operatorBtn");
 // };
 
 const shadowRefresher = () => {
-  shadow.innerText = displayScreenArray;
+  let combine = displayScreenArray.join("");
+  shadow.innerText = combine;
 };
 
-let screenUpdater = (test) => {
+const screenUpdater = (test) => {
   console.log("This is current number button clicked " + test.target.innerText);
   let numberPressed = test.target.innerText;
 
@@ -77,41 +81,42 @@ const operationRefresher = (test) => {
 
       zain();
       shadowRefresher();
-
-      console.log("this is the calculate function " + displayScreenArray[1]);
-      const opp = displayScreenArray[1];
-      let num1 = displayScreenArray[0];
-      let num2 = displayScreenArray[2];
-      console.log("this is num 1 " + num1);
-      console.log("this is num 2 " + num2);
-
-      if (opp == "+") {
-        temp = Number(num1) + Number(num2);
-
-        displayScreenTotal.innerText = temp;
-      }
-      if (opp == "-") {
-        temp = Number(num1) - Number(num2);
-
-        displayScreenTotal.innerText = temp;
-      }
-      if (opp == "/") {
-        temp = Number(num1) / Number(num2);
-
-        displayScreenTotal.innerText = temp;
-      }
-      if (opp == "*") {
-        temp = Number(num1) * Number(num2);
-
-        displayScreenTotal.innerText = temp;
-      }
+      equalsTest();
 
     default:
       console.log("default case has been reached");
       break;
   }
 };
+const equalsTest = () => {
+  console.log("this is the calculate function " + displayScreenArray[1]);
+  const opp = displayScreenArray[1];
+  num1 = displayScreenArray[0];
+  num2 = displayScreenArray[2];
+  console.log("this is num 1 " + num1);
+  console.log("this is num 2 " + num2);
 
+  if (opp == "+") {
+    temp = Number(num1) + Number(num2);
+
+    displayScreenTotal.innerText = temp;
+  }
+  if (opp == "-") {
+    temp = Number(num1) - Number(num2);
+
+    displayScreenTotal.innerText = temp;
+  }
+  if (opp == "/") {
+    temp = Number(num1) / Number(num2);
+
+    displayScreenTotal.innerText = temp;
+  }
+  if (opp == "*") {
+    temp = Number(num1) * Number(num2);
+
+    displayScreenTotal.innerText = temp;
+  }
+};
 // const calculate = () => {
 //   console.log("this is the calculate function " + displayScreenArray[0]);
 //   const opp = displayScreenArray[1];
@@ -163,6 +168,16 @@ buttonDelete.onclick = () => {
   }
 
   displayScreenTotal.innerText = displayScreenVal;
+};
+
+buttonClearAll.onclick = () => {
+  displayScreenVal = "0";
+  tempVal = 0;
+  displayScreenArray.length = 0;
+  displayScreenTotal.innerHTML = displayScreenVal;
+  shadow.innerText = "clear has taken place";
+  num1 = 0;
+  num2 = 0;
 };
 
 /*
