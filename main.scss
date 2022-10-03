@@ -19,28 +19,41 @@ body {
   height: 90vh;
   width: 100vw;
   border: 2px solid red;
+
+  padding-top: 50px;
   main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    .main__buttonColorSwitcher {
-      width: 25%;
-      transition-duration: 0.4s;
-    }
-    .main__buttonColorSwitcher:hover {
-      background-color: $dark-mode-button-color;
-      color: $dark-mode-font-color;
-    }
-    .main__darkModeButtonColorSwitcher {
-      transition-duration: 0.4s;
-      background-color: $dark-mode-button-color;
-      color: $dark-mode-font-color;
-    }
-    .main__darkModeButtonColorSwitcher:hover {
-      background-color: $background-color;
-      color: black;
-      // background-color: $background-color;
-      // color: $dark-mode-font-color;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+
+    .main__buttonColorSwitcherContainer {
+      display: flex;
+
+      justify-content: end;
+      border: 2px solid purple;
+
+      .main__buttonColorSwitcher {
+        width: 25%;
+        transition-duration: 0.4s;
+        border-radius: 20px;
+      }
+      .main__buttonColorSwitcher:hover {
+        background-color: $dark-mode-button-color;
+        color: $dark-mode-font-color;
+      }
+      .main__darkModeButtonColorSwitcher {
+        width: 25%;
+        border-radius: 20px;
+        transition-duration: 0.4s;
+        background-color: $dark-mode-button-color;
+        color: $dark-mode-font-color;
+      }
+      .main__darkModeButtonColorSwitcher:hover {
+        background-color: $background-color;
+        color: rgb(49, 45, 45);
+        // background-color: $background-color;
+        // color: $dark-mode-font-color;
+      }
     }
 
     .main__header {
@@ -255,7 +268,7 @@ body {
   }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 833px) {
   body {
     main {
       .main__calculatorContainer {
