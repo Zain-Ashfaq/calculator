@@ -68,96 +68,102 @@ body {
           opacity: 1;
         }
       }
-      .btnConatiner__secondRow {
-        height: 17%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        border: 2px solid purple;
-        #btnContainer__minus {
-          background-color: $opperator-color;
-        }
-        button {
-          font-family: $button-font;
-          width: 25%;
-          background-color: $button-color;
-          text-decoration: none;
-          // border-radius: 8px;
-          opacity: 0.6;
-          transition: 0.3s;
-        }
-        button:hover {
-          opacity: 1;
-        }
+    }
+    .btnConatiner__secondRow {
+      height: 17%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      border: 2px solid purple;
+      #btnContainer__minus {
+        background-color: $opperator-color;
       }
-      .btnConatiner__thirdRow {
-        height: 17%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        border: 2px solid purple;
-        #btnContainer__times {
-          background-color: $opperator-color;
-        }
-        button {
-          font-family: $button-font;
-          width: 25%;
-          background-color: $button-color;
-          text-decoration: none;
-          // border-radius: 8px;
-          opacity: 0.6;
-          transition: 0.3s;
-        }
-        button:hover {
-          opacity: 1;
-        }
+      .test-class {
+        background-color: skyblue;
       }
-      .btnConatiner__fourthRow {
-        height: 17%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        border: 2px solid purple;
-        #btnContainer__divide {
-          background-color: $opperator-color;
-        }
-        button {
-          font-family: $button-font;
-          width: 25%;
-          background-color: $button-color;
-          text-decoration: none;
-          // border-radius: 8px;
-          opacity: 0.6;
-          transition: 0.3s;
-        }
-        button:hover {
-          opacity: 1;
-        }
+      button {
+        background-color: purple;
       }
-      .btnConatiner__fifthRow {
-        height: 17%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        border: 2px solid purple;
-        #btnContainer__equals {
-          background-color: $opperator-color-equals;
-        }
-        #btnContainer__equals:hover {
-          color: white;
-        }
-        button {
-          font-family: $button-font;
-          width: 33%;
-          background-color: $button-color;
-          text-decoration: none;
-          // border-radius: 8px;
-          opacity: 0.6;
-          transition: 0.3s;
-        }
-        button:hover {
-          opacity: 1;
-        }
+      button {
+        font-family: $button-font;
+        width: 25%;
+        background-color: $button-color;
+        text-decoration: none;
+        // border-radius: 8px;
+        opacity: 0.6;
+        transition: 0.3s;
+      }
+      button:hover {
+        opacity: 1;
+      }
+    }
+    .btnConatiner__thirdRow {
+      height: 17%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      border: 2px solid purple;
+      #btnContainer__times {
+        background-color: $opperator-color;
+      }
+      button {
+        font-family: $button-font;
+        width: 25%;
+        background-color: $button-color;
+        text-decoration: none;
+        // border-radius: 8px;
+        opacity: 0.6;
+        transition: 0.3s;
+      }
+      button:hover {
+        opacity: 1;
+      }
+    }
+    .btnConatiner__fourthRow {
+      height: 17%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      border: 2px solid purple;
+      #btnContainer__divide {
+        background-color: $opperator-color;
+      }
+      button {
+        font-family: $button-font;
+        width: 25%;
+        background-color: $button-color;
+        text-decoration: none;
+        // border-radius: 8px;
+        opacity: 0.6;
+        transition: 0.3s;
+      }
+      button:hover {
+        opacity: 1;
+      }
+    }
+    .btnConatiner__fifthRow {
+      height: 17%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      border: 2px solid purple;
+      #btnContainer__equals {
+        background-color: $opperator-color-equals;
+      }
+      #btnContainer__equals:hover {
+        color: white;
+      }
+      button {
+        font-family: $button-font;
+        width: 33%;
+        background-color: $button-color;
+        text-decoration: none;
+        // border-radius: 8px;
+        opacity: 0.6;
+        transition: 0.3s;
+      }
+      button:hover {
+        opacity: 1;
       }
     }
   }

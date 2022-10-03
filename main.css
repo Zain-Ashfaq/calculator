@@ -61,17 +61,23 @@ body .main__calculatorContainer .main__btnConatiner .btnConatiner__firstRow butt
 body .main__calculatorContainer .main__btnConatiner .btnConatiner__firstRow button:hover {
   opacity: 1;
 }
-body .main__calculatorContainer .main__btnConatiner .btnConatiner__secondRow {
+body .main__calculatorContainer .btnConatiner__secondRow {
   height: 17%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   border: 2px solid purple;
 }
-body .main__calculatorContainer .main__btnConatiner .btnConatiner__secondRow #btnContainer__minus {
+body .main__calculatorContainer .btnConatiner__secondRow #btnContainer__minus {
   background-color: #bde8e4;
 }
-body .main__calculatorContainer .main__btnConatiner .btnConatiner__secondRow button {
+body .main__calculatorContainer .btnConatiner__secondRow .test-class {
+  background-color: skyblue;
+}
+body .main__calculatorContainer .btnConatiner__secondRow button {
+  background-color: purple;
+}
+body .main__calculatorContainer .btnConatiner__secondRow button {
   font-family: "Gemunu Libre", sans-serif;
   width: 25%;
   background-color: #e6babe;
@@ -79,20 +85,20 @@ body .main__calculatorContainer .main__btnConatiner .btnConatiner__secondRow but
   opacity: 0.6;
   transition: 0.3s;
 }
-body .main__calculatorContainer .main__btnConatiner .btnConatiner__secondRow button:hover {
+body .main__calculatorContainer .btnConatiner__secondRow button:hover {
   opacity: 1;
 }
-body .main__calculatorContainer .main__btnConatiner .btnConatiner__thirdRow {
+body .main__calculatorContainer .btnConatiner__thirdRow {
   height: 17%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   border: 2px solid purple;
 }
-body .main__calculatorContainer .main__btnConatiner .btnConatiner__thirdRow #btnContainer__times {
+body .main__calculatorContainer .btnConatiner__thirdRow #btnContainer__times {
   background-color: #bde8e4;
 }
-body .main__calculatorContainer .main__btnConatiner .btnConatiner__thirdRow button {
+body .main__calculatorContainer .btnConatiner__thirdRow button {
   font-family: "Gemunu Libre", sans-serif;
   width: 25%;
   background-color: #e6babe;
@@ -100,20 +106,20 @@ body .main__calculatorContainer .main__btnConatiner .btnConatiner__thirdRow butt
   opacity: 0.6;
   transition: 0.3s;
 }
-body .main__calculatorContainer .main__btnConatiner .btnConatiner__thirdRow button:hover {
+body .main__calculatorContainer .btnConatiner__thirdRow button:hover {
   opacity: 1;
 }
-body .main__calculatorContainer .main__btnConatiner .btnConatiner__fourthRow {
+body .main__calculatorContainer .btnConatiner__fourthRow {
   height: 17%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   border: 2px solid purple;
 }
-body .main__calculatorContainer .main__btnConatiner .btnConatiner__fourthRow #btnContainer__divide {
+body .main__calculatorContainer .btnConatiner__fourthRow #btnContainer__divide {
   background-color: #bde8e4;
 }
-body .main__calculatorContainer .main__btnConatiner .btnConatiner__fourthRow button {
+body .main__calculatorContainer .btnConatiner__fourthRow button {
   font-family: "Gemunu Libre", sans-serif;
   width: 25%;
   background-color: #e6babe;
@@ -121,23 +127,23 @@ body .main__calculatorContainer .main__btnConatiner .btnConatiner__fourthRow but
   opacity: 0.6;
   transition: 0.3s;
 }
-body .main__calculatorContainer .main__btnConatiner .btnConatiner__fourthRow button:hover {
+body .main__calculatorContainer .btnConatiner__fourthRow button:hover {
   opacity: 1;
 }
-body .main__calculatorContainer .main__btnConatiner .btnConatiner__fifthRow {
+body .main__calculatorContainer .btnConatiner__fifthRow {
   height: 17%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   border: 2px solid purple;
 }
-body .main__calculatorContainer .main__btnConatiner .btnConatiner__fifthRow #btnContainer__equals {
+body .main__calculatorContainer .btnConatiner__fifthRow #btnContainer__equals {
   background-color: #27a599;
 }
-body .main__calculatorContainer .main__btnConatiner .btnConatiner__fifthRow #btnContainer__equals:hover {
+body .main__calculatorContainer .btnConatiner__fifthRow #btnContainer__equals:hover {
   color: white;
 }
-body .main__calculatorContainer .main__btnConatiner .btnConatiner__fifthRow button {
+body .main__calculatorContainer .btnConatiner__fifthRow button {
   font-family: "Gemunu Libre", sans-serif;
   width: 33%;
   background-color: #e6babe;
@@ -145,7 +151,7 @@ body .main__calculatorContainer .main__btnConatiner .btnConatiner__fifthRow butt
   opacity: 0.6;
   transition: 0.3s;
 }
-body .main__calculatorContainer .main__btnConatiner .btnConatiner__fifthRow button:hover {
+body .main__calculatorContainer .btnConatiner__fifthRow button:hover {
   opacity: 1;
 }
 

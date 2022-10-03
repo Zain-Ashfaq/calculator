@@ -8,6 +8,14 @@
 
 // button should also push operators? how to seperate the operator and number in an array?
 const displayScreenTotal = document.querySelector("#main__showScreen");
+// For switching light and dark mode
+const buttonColorSwitcher = document.querySelector(
+  ".header__buttonColorSwitcher"
+);
+// const firstRow = document.querySelectorAll("main__btnNumber");
+let switcher = false;
+
+//////
 
 // let buttonDelete = document.getElementsByClassName("main__deleteButon");
 const buttonDelete = document.getElementById("btnContainer__del");
@@ -22,13 +30,23 @@ let num2;
 
 let tempVal;
 let displayScreenVal = "0";
-// let BtnNumber = document.querySelector(".main__btnNumber");
-const BtnNumber = document.getElementsByClassName("main__btnNumber");
+// let btnNumber = document.querySelector(".main__btnNumber");
+const btnNumber = document.getElementsByClassName("main__btnNumber");
 const operatorBtn = document.getElementsByClassName("main__operatorBtn");
 
 // const test = () => {
 //   console.log("button has been clicked");
 // };
+const myFunction = () => {
+  for (list of btnNumber) {
+    list.classList.toggle("test-class");
+    // console.log(" adding " + btnNumber);
+    // list.classList.remove("test-class");
+    // console.log("removing " + btnNumber);
+    console.log(list);
+  }
+};
+buttonColorSwitcher.addEventListener("click", myFunction);
 
 const shadowRefresher = () => {
   let combine = displayScreenArray.join("");
@@ -48,9 +66,9 @@ const screenUpdater = (test) => {
   // console.log("This is the current screen value" + displayScreenVal);
 };
 
-for (let i = 0; i < BtnNumber.length; i++) {
+for (let i = 0; i < btnNumber.length; i++) {
   console.log("test");
-  BtnNumber[i].addEventListener("click", screenUpdater, false);
+  btnNumber[i].addEventListener("click", screenUpdater, false);
 }
 
 const operationRefresher = (test) => {
@@ -152,6 +170,8 @@ for (let i = 0; i < operatorBtn.length; i++) {
   console.log("op button");
   operatorBtn[i].addEventListener("click", operationRefresher, false);
 }
+
+/////////////
 
 buttonDecimalPoint.onclick = () => {
   if (displayScreenVal.includes(".") == false) displayScreenVal += ".";
