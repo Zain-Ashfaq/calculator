@@ -29,9 +29,12 @@ body .main__calculatorContainer .main__displayNumbers {
   display: flex;
   justify-content: flex-end;
   padding: 10px 0px;
-  margin-bottom: 10px;
   border: 2px solid blue;
   height: 5%;
+  font-family: "Orbitron", sans-serif;
+}
+body .main__calculatorContainer #main__displayResShadow {
+  color: #27a599;
 }
 body .main__calculatorContainer .main__btnConatiner {
   border: 2px solid yellowgreen;
@@ -44,11 +47,14 @@ body .main__calculatorContainer .main__btnConatiner .btnConatiner__firstRow {
   justify-content: space-between;
   border: 2px solid purple;
 }
+body .main__calculatorContainer .main__btnConatiner .btnConatiner__firstRow #btnContainer__add {
+  background-color: #bde8e4;
+}
 body .main__calculatorContainer .main__btnConatiner .btnConatiner__firstRow button {
+  font-family: "Gemunu Libre", sans-serif;
   width: 33%;
   background-color: #e6babe;
   text-decoration: none;
-  border-radius: 8px;
   opacity: 0.6;
   transition: 0.3s;
 }
@@ -62,8 +68,19 @@ body .main__calculatorContainer .main__btnConatiner .btnConatiner__secondRow {
   justify-content: space-between;
   border: 2px solid purple;
 }
+body .main__calculatorContainer .main__btnConatiner .btnConatiner__secondRow #btnContainer__minus {
+  background-color: #bde8e4;
+}
 body .main__calculatorContainer .main__btnConatiner .btnConatiner__secondRow button {
+  font-family: "Gemunu Libre", sans-serif;
   width: 25%;
+  background-color: #e6babe;
+  text-decoration: none;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+body .main__calculatorContainer .main__btnConatiner .btnConatiner__secondRow button:hover {
+  opacity: 1;
 }
 body .main__calculatorContainer .main__btnConatiner .btnConatiner__thirdRow {
   height: 17%;
@@ -72,8 +89,19 @@ body .main__calculatorContainer .main__btnConatiner .btnConatiner__thirdRow {
   justify-content: space-between;
   border: 2px solid purple;
 }
+body .main__calculatorContainer .main__btnConatiner .btnConatiner__thirdRow #btnContainer__times {
+  background-color: #bde8e4;
+}
 body .main__calculatorContainer .main__btnConatiner .btnConatiner__thirdRow button {
+  font-family: "Gemunu Libre", sans-serif;
   width: 25%;
+  background-color: #e6babe;
+  text-decoration: none;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+body .main__calculatorContainer .main__btnConatiner .btnConatiner__thirdRow button:hover {
+  opacity: 1;
 }
 body .main__calculatorContainer .main__btnConatiner .btnConatiner__fourthRow {
   height: 17%;
@@ -82,8 +110,19 @@ body .main__calculatorContainer .main__btnConatiner .btnConatiner__fourthRow {
   justify-content: space-between;
   border: 2px solid purple;
 }
+body .main__calculatorContainer .main__btnConatiner .btnConatiner__fourthRow #btnContainer__divide {
+  background-color: #bde8e4;
+}
 body .main__calculatorContainer .main__btnConatiner .btnConatiner__fourthRow button {
+  font-family: "Gemunu Libre", sans-serif;
   width: 25%;
+  background-color: #e6babe;
+  text-decoration: none;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+body .main__calculatorContainer .main__btnConatiner .btnConatiner__fourthRow button:hover {
+  opacity: 1;
 }
 body .main__calculatorContainer .main__btnConatiner .btnConatiner__fifthRow {
   height: 17%;
@@ -92,15 +131,32 @@ body .main__calculatorContainer .main__btnConatiner .btnConatiner__fifthRow {
   justify-content: space-between;
   border: 2px solid purple;
 }
+body .main__calculatorContainer .main__btnConatiner .btnConatiner__fifthRow #btnContainer__equals {
+  background-color: #27a599;
+}
+body .main__calculatorContainer .main__btnConatiner .btnConatiner__fifthRow #btnContainer__equals:hover {
+  color: white;
+}
 body .main__calculatorContainer .main__btnConatiner .btnConatiner__fifthRow button {
+  font-family: "Gemunu Libre", sans-serif;
   width: 33%;
+  background-color: #e6babe;
+  text-decoration: none;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+body .main__calculatorContainer .main__btnConatiner .btnConatiner__fifthRow button:hover {
+  opacity: 1;
 }
 
 @media only screen and (min-width: 1024px) {
   body main .main__calculatorContainer {
     height: 80vh;
-    width: 50vh;
+    width: 60vh;
     font-size: 2rem;
+  }
+  body main .main__calculatorContainer #main__displayResShadow {
+    font-size: 1rem;
   }
   body main .main__calculatorContainer .main__displayNumbers {
     text-align: end;

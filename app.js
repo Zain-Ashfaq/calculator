@@ -10,7 +10,7 @@
 const displayScreenTotal = document.querySelector("#main__showScreen");
 
 // let buttonDelete = document.getElementsByClassName("main__deleteButon");
-const buttonDelete = document.getElementById("del");
+const buttonDelete = document.getElementById("btnContainer__del");
 const buttonDecimalPoint = document.getElementById("decimalPoint");
 
 const shadow = document.getElementById("main__displayResShadow");
