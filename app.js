@@ -35,16 +35,20 @@ const btnNumber = document.getElementsByClassName("main__btnNumber");
 const operatorBtn = document.getElementsByClassName("main__operatorBtn");
 const leftoverBtn = document.getElementsByClassName("main__leftoverBtn");
 const darkModeDisplay = document.getElementsByClassName("main__displayNumbers");
+const sliderToggle = document.getElementsByClassName("switch");
 
-// const test = () => {
-//   console.log("button has been clicked");
-// };
+const test = () => {
+  console.log("button has been clicked");
+};
 const myFunction = () => {
   if (switcher == false) {
-    buttonColorSwitcher.innerHTML = "turn on dark mode";
+    buttonColorSwitcher.innerHTML = "turn on light mode";
+    buttonColorSwitcher.classList.toggle("main__darkModeButtonColorSwitcher");
+
     switcher = true;
   } else {
-    buttonColorSwitcher.innerHTML = "turn on light mode";
+    buttonColorSwitcher.innerHTML = "turn on dark mode";
+    buttonColorSwitcher.classList.toggle("main__darkModeButtonColorSwitcher");
     switcher = false;
   }
 

@@ -11,21 +11,47 @@ body {
   height: 90vh;
   width: 100vw;
   border: 2px solid red;
+  padding-top: 50px;
 }
-body .main__header {
+body main .main__buttonColorSwitcherContainer {
+  display: flex;
+  justify-content: end;
+  border: 2px solid purple;
+}
+body main .main__buttonColorSwitcherContainer .main__buttonColorSwitcher {
+  width: 25%;
+  transition-duration: 0.4s;
+  border-radius: 20px;
+}
+body main .main__buttonColorSwitcherContainer .main__buttonColorSwitcher:hover {
+  background-color: black;
+  color: white;
+}
+body main .main__buttonColorSwitcherContainer .main__darkModeButtonColorSwitcher {
+  width: 25%;
+  border-radius: 20px;
+  transition-duration: 0.4s;
+  background-color: black;
+  color: white;
+}
+body main .main__buttonColorSwitcherContainer .main__darkModeButtonColorSwitcher:hover {
+  background-color: #ece6e6;
+  color: rgb(49, 45, 45);
+}
+body main .main__header {
   display: flex;
   justify-content: center;
   color: green;
   border: 2px solid purple;
   height: 20%;
 }
-body .main__calculatorContainer {
+body main .main__calculatorContainer {
   border: 2px solid green;
   border-radius: 10px;
   height: 40vh;
   width: 80vw;
 }
-body .main__calculatorContainer .main__displayNumbers {
+body main .main__calculatorContainer .main__displayNumbers {
   display: flex;
   justify-content: flex-end;
   padding: 10px 0px;
@@ -33,48 +59,48 @@ body .main__calculatorContainer .main__displayNumbers {
   height: 5%;
   font-family: "Orbitron", sans-serif;
 }
-body .main__calculatorContainer .darkModeDisplay {
+body main .main__calculatorContainer .darkModeDisplay {
   background-color: black;
   color: #27a599;
   opacity: 0.65;
   transition: 0.3s;
 }
-body .main__calculatorContainer #main__displayResShadow {
+body main .main__calculatorContainer #main__displayResShadow {
   color: #27a599;
 }
-body .main__calculatorContainer .main__btnConatiner {
+body main .main__calculatorContainer .main__btnConatiner {
   border: 2px solid yellowgreen;
   height: 65%;
 }
-body .main__calculatorContainer .main__btnConatiner .main__operatorBtn {
+body main .main__calculatorContainer .main__btnConatiner .main__operatorBtn {
   background-color: #27a599;
 }
-body .main__calculatorContainer .main__btnConatiner .main__operatorBtn:hover {
+body main .main__calculatorContainer .main__btnConatiner .main__operatorBtn:hover {
   color: white;
 }
-body .main__calculatorContainer .main__btnConatiner .btnConatiner__firstRow {
+body main .main__calculatorContainer .main__btnConatiner .btnConatiner__firstRow {
   height: 17%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   border: 2px solid purple;
 }
-body .main__calculatorContainer .main__btnConatiner .btnConatiner__firstRow .main__operatorBtn {
+body main .main__calculatorContainer .main__btnConatiner .btnConatiner__firstRow .main__operatorBtn {
   background-color: #27a599;
 }
-body .main__calculatorContainer .main__btnConatiner .btnConatiner__firstRow .main__operatorBtn:hover {
+body main .main__calculatorContainer .main__btnConatiner .btnConatiner__firstRow .main__operatorBtn:hover {
   color: white;
 }
-body .main__calculatorContainer .main__btnConatiner .btnConatiner__firstRow .darkModeNumberBtn {
+body main .main__calculatorContainer .main__btnConatiner .btnConatiner__firstRow .darkModeNumberBtn {
   border-color: white;
   background-color: black;
   color: white;
 }
-body .main__calculatorContainer .main__btnConatiner .btnConatiner__firstRow .darkModeOperatorBtn {
+body main .main__calculatorContainer .main__btnConatiner .btnConatiner__firstRow .darkModeOperatorBtn {
   background-color: #e0930e;
   color: white;
 }
-body .main__calculatorContainer .main__btnConatiner .btnConatiner__firstRow button {
+body main .main__calculatorContainer .main__btnConatiner .btnConatiner__firstRow button {
   font-family: "Gemunu Libre", sans-serif;
   width: 33.3%;
   background-color: #e6babe;
@@ -82,29 +108,29 @@ body .main__calculatorContainer .main__btnConatiner .btnConatiner__firstRow butt
   opacity: 0.6;
   transition: 0.3s;
 }
-body .main__calculatorContainer .main__btnConatiner .btnConatiner__firstRow button:hover {
+body main .main__calculatorContainer .main__btnConatiner .btnConatiner__firstRow button:hover {
   opacity: 1;
 }
-body .main__calculatorContainer .btnConatiner__secondRow {
+body main .main__calculatorContainer .btnConatiner__secondRow {
   height: 17%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   border: 2px solid purple;
 }
-body .main__calculatorContainer .btnConatiner__secondRow .darkModeNumberBtn {
+body main .main__calculatorContainer .btnConatiner__secondRow .darkModeNumberBtn {
   border-color: white;
   background-color: black;
   color: white;
 }
-body .main__calculatorContainer .btnConatiner__secondRow .darkModeOperatorBtn {
+body main .main__calculatorContainer .btnConatiner__secondRow .darkModeOperatorBtn {
   background-color: #e0930e;
   color: white;
 }
-body .main__calculatorContainer .btnConatiner__secondRow button {
+body main .main__calculatorContainer .btnConatiner__secondRow button {
   background-color: purple;
 }
-body .main__calculatorContainer .btnConatiner__secondRow button {
+body main .main__calculatorContainer .btnConatiner__secondRow button {
   font-family: "Gemunu Libre", sans-serif;
   width: 25%;
   background-color: #e6babe;
@@ -112,26 +138,26 @@ body .main__calculatorContainer .btnConatiner__secondRow button {
   opacity: 0.6;
   transition: 0.3s;
 }
-body .main__calculatorContainer .btnConatiner__secondRow button:hover {
+body main .main__calculatorContainer .btnConatiner__secondRow button:hover {
   opacity: 1;
 }
-body .main__calculatorContainer .btnConatiner__thirdRow {
+body main .main__calculatorContainer .btnConatiner__thirdRow {
   height: 17%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   border: 2px solid purple;
 }
-body .main__calculatorContainer .btnConatiner__thirdRow .darkModeNumberBtn {
+body main .main__calculatorContainer .btnConatiner__thirdRow .darkModeNumberBtn {
   border-color: white;
   background-color: black;
   color: white;
 }
-body .main__calculatorContainer .btnConatiner__thirdRow .darkModeOperatorBtn {
+body main .main__calculatorContainer .btnConatiner__thirdRow .darkModeOperatorBtn {
   background-color: #e0930e;
   color: white;
 }
-body .main__calculatorContainer .btnConatiner__thirdRow button {
+body main .main__calculatorContainer .btnConatiner__thirdRow button {
   font-family: "Gemunu Libre", sans-serif;
   width: 25%;
   background-color: #e6babe;
@@ -139,26 +165,26 @@ body .main__calculatorContainer .btnConatiner__thirdRow button {
   opacity: 0.6;
   transition: 0.3s;
 }
-body .main__calculatorContainer .btnConatiner__thirdRow button:hover {
+body main .main__calculatorContainer .btnConatiner__thirdRow button:hover {
   opacity: 1;
 }
-body .main__calculatorContainer .btnConatiner__fourthRow {
+body main .main__calculatorContainer .btnConatiner__fourthRow {
   height: 17%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   border: 2px solid purple;
 }
-body .main__calculatorContainer .btnConatiner__fourthRow .darkModeNumberBtn {
+body main .main__calculatorContainer .btnConatiner__fourthRow .darkModeNumberBtn {
   border-color: white;
   background-color: black;
   color: white;
 }
-body .main__calculatorContainer .btnConatiner__fourthRow .darkModeOperatorBtn {
+body main .main__calculatorContainer .btnConatiner__fourthRow .darkModeOperatorBtn {
   background-color: #e0930e;
   color: white;
 }
-body .main__calculatorContainer .btnConatiner__fourthRow button {
+body main .main__calculatorContainer .btnConatiner__fourthRow button {
   font-family: "Gemunu Libre", sans-serif;
   width: 25%;
   background-color: #e6babe;
@@ -166,26 +192,26 @@ body .main__calculatorContainer .btnConatiner__fourthRow button {
   opacity: 0.6;
   transition: 0.3s;
 }
-body .main__calculatorContainer .btnConatiner__fourthRow button:hover {
+body main .main__calculatorContainer .btnConatiner__fourthRow button:hover {
   opacity: 1;
 }
-body .main__calculatorContainer .btnConatiner__fifthRow {
+body main .main__calculatorContainer .btnConatiner__fifthRow {
   height: 17%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   border: 2px solid purple;
 }
-body .main__calculatorContainer .btnConatiner__fifthRow .darkModeNumberBtn {
+body main .main__calculatorContainer .btnConatiner__fifthRow .darkModeNumberBtn {
   border-color: white;
   background-color: black;
   color: white;
 }
-body .main__calculatorContainer .btnConatiner__fifthRow .darkModeOperatorBtn {
+body main .main__calculatorContainer .btnConatiner__fifthRow .darkModeOperatorBtn {
   background-color: #e0930e;
   color: white;
 }
-body .main__calculatorContainer .btnConatiner__fifthRow button {
+body main .main__calculatorContainer .btnConatiner__fifthRow button {
   font-family: "Gemunu Libre", sans-serif;
   width: 33.3%;
   background-color: #e6babe;
@@ -193,11 +219,11 @@ body .main__calculatorContainer .btnConatiner__fifthRow button {
   opacity: 0.6;
   transition: 0.3s;
 }
-body .main__calculatorContainer .btnConatiner__fifthRow button:hover {
+body main .main__calculatorContainer .btnConatiner__fifthRow button:hover {
   opacity: 1;
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 833px) {
   body main .main__calculatorContainer {
     height: 80vh;
     width: 60vh;
