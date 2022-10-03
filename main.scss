@@ -19,6 +19,7 @@ body {
   height: 90vh;
   width: 100vw;
   border: 2px solid red;
+
   .main__header {
     display: flex;
     justify-content: center;
@@ -26,6 +27,7 @@ body {
     border: 2px solid purple;
     height: 20%;
   }
+
   .main__calculatorContainer {
     border: 2px solid green;
     border-radius: 10px;
@@ -39,7 +41,14 @@ body {
       // margin-bottom: 10px;
       border: 2px solid blue;
       height: 5%;
+
       font-family: $display-font;
+    }
+    .darkModeDisplay {
+      background-color: black;
+      color: $opperator-color-equals;
+      opacity: 0.65;
+      transition: 0.3s;
     }
     #main__displayResShadow {
       color: $opperator-color-equals;
@@ -77,10 +86,11 @@ body {
         }
         .darkModeOperatorBtn {
           background-color: $dark-mode-opperator-color;
+          color: $dark-mode-font-color;
         }
         button {
           font-family: $button-font;
-          width: 33%;
+          width: 33.3%;
           background-color: $button-color;
           text-decoration: none;
           // border-radius: 8px;
@@ -108,6 +118,7 @@ body {
       }
       .darkModeOperatorBtn {
         background-color: $dark-mode-opperator-color;
+        color: $dark-mode-font-color;
       }
       button {
         background-color: purple;
@@ -141,6 +152,7 @@ body {
       }
       .darkModeOperatorBtn {
         background-color: $dark-mode-opperator-color;
+        color: $dark-mode-font-color;
       }
       button {
         font-family: $button-font;
@@ -171,6 +183,7 @@ body {
       }
       .darkModeOperatorBtn {
         background-color: $dark-mode-opperator-color;
+        color: $dark-mode-font-color;
       }
       button {
         font-family: $button-font;
@@ -199,11 +212,12 @@ body {
       }
       .darkModeOperatorBtn {
         background-color: $dark-mode-opperator-color;
+        color: $dark-mode-font-color;
       }
 
       button {
         font-family: $button-font;
-        width: 33%;
+        width: 33.3%;
         background-color: $button-color;
         text-decoration: none;
         // border-radius: 8px;

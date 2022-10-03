@@ -10,7 +10,7 @@
 const displayScreenTotal = document.querySelector("#main__showScreen");
 // For switching light and dark mode
 const buttonColorSwitcher = document.querySelector(
-  ".header__buttonColorSwitcher"
+  ".main__buttonColorSwitcher"
 );
 // const firstRow = document.querySelectorAll("main__btnNumber");
 let switcher = false;
@@ -34,6 +34,7 @@ let displayScreenVal = "0";
 const btnNumber = document.getElementsByClassName("main__btnNumber");
 const operatorBtn = document.getElementsByClassName("main__operatorBtn");
 const leftoverBtn = document.getElementsByClassName("main__leftoverBtn");
+const darkModeDisplay = document.getElementsByClassName("main__displayNumbers");
 
 // const test = () => {
 //   console.log("button has been clicked");
@@ -46,6 +47,7 @@ const myFunction = () => {
     buttonColorSwitcher.innerHTML = "turn on light mode";
     switcher = false;
   }
+
   for (list of btnNumber) {
     list.classList.toggle("darkModeNumberBtn");
 
@@ -58,6 +60,10 @@ const myFunction = () => {
 
   for (list of leftoverBtn) {
     list.classList.toggle("darkModeNumberBtn");
+    // console.log(list);
+  }
+  for (list of darkModeDisplay) {
+    list.classList.toggle("darkModeDisplay");
     console.log(list);
   }
 };

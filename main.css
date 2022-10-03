@@ -33,6 +33,12 @@ body .main__calculatorContainer .main__displayNumbers {
   height: 5%;
   font-family: "Orbitron", sans-serif;
 }
+body .main__calculatorContainer .darkModeDisplay {
+  background-color: black;
+  color: #27a599;
+  opacity: 0.65;
+  transition: 0.3s;
+}
 body .main__calculatorContainer #main__displayResShadow {
   color: #27a599;
 }
@@ -66,10 +72,11 @@ body .main__calculatorContainer .main__btnConatiner .btnConatiner__firstRow .dar
 }
 body .main__calculatorContainer .main__btnConatiner .btnConatiner__firstRow .darkModeOperatorBtn {
   background-color: #e0930e;
+  color: white;
 }
 body .main__calculatorContainer .main__btnConatiner .btnConatiner__firstRow button {
   font-family: "Gemunu Libre", sans-serif;
-  width: 33%;
+  width: 33.3%;
   background-color: #e6babe;
   text-decoration: none;
   opacity: 0.6;
@@ -92,6 +99,7 @@ body .main__calculatorContainer .btnConatiner__secondRow .darkModeNumberBtn {
 }
 body .main__calculatorContainer .btnConatiner__secondRow .darkModeOperatorBtn {
   background-color: #e0930e;
+  color: white;
 }
 body .main__calculatorContainer .btnConatiner__secondRow button {
   background-color: purple;
@@ -121,6 +129,7 @@ body .main__calculatorContainer .btnConatiner__thirdRow .darkModeNumberBtn {
 }
 body .main__calculatorContainer .btnConatiner__thirdRow .darkModeOperatorBtn {
   background-color: #e0930e;
+  color: white;
 }
 body .main__calculatorContainer .btnConatiner__thirdRow button {
   font-family: "Gemunu Libre", sans-serif;
@@ -147,6 +156,7 @@ body .main__calculatorContainer .btnConatiner__fourthRow .darkModeNumberBtn {
 }
 body .main__calculatorContainer .btnConatiner__fourthRow .darkModeOperatorBtn {
   background-color: #e0930e;
+  color: white;
 }
 body .main__calculatorContainer .btnConatiner__fourthRow button {
   font-family: "Gemunu Libre", sans-serif;
@@ -173,10 +183,11 @@ body .main__calculatorContainer .btnConatiner__fifthRow .darkModeNumberBtn {
 }
 body .main__calculatorContainer .btnConatiner__fifthRow .darkModeOperatorBtn {
   background-color: #e0930e;
+  color: white;
 }
 body .main__calculatorContainer .btnConatiner__fifthRow button {
   font-family: "Gemunu Libre", sans-serif;
-  width: 33%;
+  width: 33.3%;
   background-color: #e6babe;
   text-decoration: none;
   opacity: 0.6;
