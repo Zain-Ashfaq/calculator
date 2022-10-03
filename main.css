@@ -40,6 +40,12 @@ body .main__calculatorContainer .main__btnConatiner {
   border: 2px solid yellowgreen;
   height: 65%;
 }
+body .main__calculatorContainer .main__btnConatiner .main__operatorBtn {
+  background-color: #27a599;
+}
+body .main__calculatorContainer .main__btnConatiner .main__operatorBtn:hover {
+  color: white;
+}
 body .main__calculatorContainer .main__btnConatiner .btnConatiner__firstRow {
   height: 17%;
   display: flex;
@@ -47,8 +53,19 @@ body .main__calculatorContainer .main__btnConatiner .btnConatiner__firstRow {
   justify-content: space-between;
   border: 2px solid purple;
 }
-body .main__calculatorContainer .main__btnConatiner .btnConatiner__firstRow #btnContainer__add {
-  background-color: #bde8e4;
+body .main__calculatorContainer .main__btnConatiner .btnConatiner__firstRow .main__operatorBtn {
+  background-color: #27a599;
+}
+body .main__calculatorContainer .main__btnConatiner .btnConatiner__firstRow .main__operatorBtn:hover {
+  color: white;
+}
+body .main__calculatorContainer .main__btnConatiner .btnConatiner__firstRow .darkModeNumberBtn {
+  border-color: white;
+  background-color: black;
+  color: white;
+}
+body .main__calculatorContainer .main__btnConatiner .btnConatiner__firstRow .darkModeOperatorBtn {
+  background-color: #e0930e;
 }
 body .main__calculatorContainer .main__btnConatiner .btnConatiner__firstRow button {
   font-family: "Gemunu Libre", sans-serif;
@@ -68,11 +85,13 @@ body .main__calculatorContainer .btnConatiner__secondRow {
   justify-content: space-between;
   border: 2px solid purple;
 }
-body .main__calculatorContainer .btnConatiner__secondRow #btnContainer__minus {
-  background-color: #bde8e4;
+body .main__calculatorContainer .btnConatiner__secondRow .darkModeNumberBtn {
+  border-color: white;
+  background-color: black;
+  color: white;
 }
-body .main__calculatorContainer .btnConatiner__secondRow .test-class {
-  background-color: skyblue;
+body .main__calculatorContainer .btnConatiner__secondRow .darkModeOperatorBtn {
+  background-color: #e0930e;
 }
 body .main__calculatorContainer .btnConatiner__secondRow button {
   background-color: purple;
@@ -95,8 +114,13 @@ body .main__calculatorContainer .btnConatiner__thirdRow {
   justify-content: space-between;
   border: 2px solid purple;
 }
-body .main__calculatorContainer .btnConatiner__thirdRow #btnContainer__times {
-  background-color: #bde8e4;
+body .main__calculatorContainer .btnConatiner__thirdRow .darkModeNumberBtn {
+  border-color: white;
+  background-color: black;
+  color: white;
+}
+body .main__calculatorContainer .btnConatiner__thirdRow .darkModeOperatorBtn {
+  background-color: #e0930e;
 }
 body .main__calculatorContainer .btnConatiner__thirdRow button {
   font-family: "Gemunu Libre", sans-serif;
@@ -116,8 +140,13 @@ body .main__calculatorContainer .btnConatiner__fourthRow {
   justify-content: space-between;
   border: 2px solid purple;
 }
-body .main__calculatorContainer .btnConatiner__fourthRow #btnContainer__divide {
-  background-color: #bde8e4;
+body .main__calculatorContainer .btnConatiner__fourthRow .darkModeNumberBtn {
+  border-color: white;
+  background-color: black;
+  color: white;
+}
+body .main__calculatorContainer .btnConatiner__fourthRow .darkModeOperatorBtn {
+  background-color: #e0930e;
 }
 body .main__calculatorContainer .btnConatiner__fourthRow button {
   font-family: "Gemunu Libre", sans-serif;
@@ -137,11 +166,13 @@ body .main__calculatorContainer .btnConatiner__fifthRow {
   justify-content: space-between;
   border: 2px solid purple;
 }
-body .main__calculatorContainer .btnConatiner__fifthRow #btnContainer__equals {
-  background-color: #27a599;
-}
-body .main__calculatorContainer .btnConatiner__fifthRow #btnContainer__equals:hover {
+body .main__calculatorContainer .btnConatiner__fifthRow .darkModeNumberBtn {
+  border-color: white;
+  background-color: black;
   color: white;
+}
+body .main__calculatorContainer .btnConatiner__fifthRow .darkModeOperatorBtn {
+  background-color: #e0930e;
 }
 body .main__calculatorContainer .btnConatiner__fifthRow button {
   font-family: "Gemunu Libre", sans-serif;

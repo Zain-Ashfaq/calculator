@@ -9,6 +9,9 @@ $opperator-color: #bde8e4;
 $opperator-color-equals: #27a599;
 $display-font: "Orbitron", sans-serif;
 $button-font: "Gemunu Libre", sans-serif;
+$dark-mode-button-color: black;
+$dark-mode-font-color: white;
+$dark-mode-opperator-color: #e0930e;
 body {
   display: flex;
   justify-content: center;
@@ -44,6 +47,12 @@ body {
     .main__btnConatiner {
       border: 2px solid yellowgreen;
       height: 65%;
+      .main__operatorBtn {
+        background-color: $opperator-color-equals;
+      }
+      .main__operatorBtn:hover {
+        color: white;
+      }
 
       .btnConatiner__firstRow {
         height: 17%;
@@ -52,8 +61,22 @@ body {
         justify-content: space-between;
         border: 2px solid purple;
 
-        #btnContainer__add {
-          background-color: $opperator-color;
+        // #btnContainer__add {
+        //   background-color: $opperator-color;
+        // }
+        .main__operatorBtn {
+          background-color: $opperator-color-equals;
+        }
+        .main__operatorBtn:hover {
+          color: white;
+        }
+        .darkModeNumberBtn {
+          border-color: $dark-mode-font-color;
+          background-color: $dark-mode-button-color;
+          color: $dark-mode-font-color;
+        }
+        .darkModeOperatorBtn {
+          background-color: $dark-mode-opperator-color;
         }
         button {
           font-family: $button-font;
@@ -75,11 +98,16 @@ body {
       flex-direction: row;
       justify-content: space-between;
       border: 2px solid purple;
-      #btnContainer__minus {
-        background-color: $opperator-color;
+      // #btnContainer__minus {
+      //   background-color: $opperator-color;
+      // }
+      .darkModeNumberBtn {
+        border-color: $dark-mode-font-color;
+        background-color: $dark-mode-button-color;
+        color: $dark-mode-font-color;
       }
-      .test-class {
-        background-color: skyblue;
+      .darkModeOperatorBtn {
+        background-color: $dark-mode-opperator-color;
       }
       button {
         background-color: purple;
@@ -103,8 +131,16 @@ body {
       flex-direction: row;
       justify-content: space-between;
       border: 2px solid purple;
-      #btnContainer__times {
-        background-color: $opperator-color;
+      // #btnContainer__times {
+      //   background-color: $opperator-color;
+      // }
+      .darkModeNumberBtn {
+        border-color: $dark-mode-font-color;
+        background-color: $dark-mode-button-color;
+        color: $dark-mode-font-color;
+      }
+      .darkModeOperatorBtn {
+        background-color: $dark-mode-opperator-color;
       }
       button {
         font-family: $button-font;
@@ -125,8 +161,16 @@ body {
       flex-direction: row;
       justify-content: space-between;
       border: 2px solid purple;
-      #btnContainer__divide {
-        background-color: $opperator-color;
+      // #btnContainer__divide {
+      //   background-color: $opperator-color;
+      // }
+      .darkModeNumberBtn {
+        border-color: $dark-mode-font-color;
+        background-color: $dark-mode-button-color;
+        color: $dark-mode-font-color;
+      }
+      .darkModeOperatorBtn {
+        background-color: $dark-mode-opperator-color;
       }
       button {
         font-family: $button-font;
@@ -147,12 +191,16 @@ body {
       flex-direction: row;
       justify-content: space-between;
       border: 2px solid purple;
-      #btnContainer__equals {
-        background-color: $opperator-color-equals;
+
+      .darkModeNumberBtn {
+        border-color: $dark-mode-font-color;
+        background-color: $dark-mode-button-color;
+        color: $dark-mode-font-color;
       }
-      #btnContainer__equals:hover {
-        color: white;
+      .darkModeOperatorBtn {
+        background-color: $dark-mode-opperator-color;
       }
+
       button {
         font-family: $button-font;
         width: 33%;

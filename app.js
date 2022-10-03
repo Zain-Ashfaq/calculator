@@ -33,16 +33,31 @@ let displayScreenVal = "0";
 // let btnNumber = document.querySelector(".main__btnNumber");
 const btnNumber = document.getElementsByClassName("main__btnNumber");
 const operatorBtn = document.getElementsByClassName("main__operatorBtn");
+const leftoverBtn = document.getElementsByClassName("main__leftoverBtn");
 
 // const test = () => {
 //   console.log("button has been clicked");
 // };
 const myFunction = () => {
+  if (switcher == false) {
+    buttonColorSwitcher.innerHTML = "turn on dark mode";
+    switcher = true;
+  } else {
+    buttonColorSwitcher.innerHTML = "turn on light mode";
+    switcher = false;
+  }
   for (list of btnNumber) {
-    list.classList.toggle("test-class");
-    // console.log(" adding " + btnNumber);
-    // list.classList.remove("test-class");
-    // console.log("removing " + btnNumber);
+    list.classList.toggle("darkModeNumberBtn");
+
+    // console.log(list);
+  }
+  for (list of operatorBtn) {
+    list.classList.toggle("darkModeOperatorBtn");
+    // console.log(list);
+  }
+
+  for (list of leftoverBtn) {
+    list.classList.toggle("darkModeNumberBtn");
     console.log(list);
   }
 };
